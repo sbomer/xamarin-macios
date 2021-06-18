@@ -356,7 +356,6 @@
 			<!--
 				post-output steps
 			-->
-			<!-- TODO: remove AfterStep="OutputStep" from the post-output steps once we get the fix from https://github.com/mono/linker/pull/2082 -->
 			<_TrimmerCustomSteps Include="$(_AdditionalTaskAssembly)" Type="Xamarin.Linker.RegistrarStep" />
 			<_TrimmerCustomSteps Include="$(_AdditionalTaskAssembly)" Type="Xamarin.GenerateMainStep" />
 			<_TrimmerCustomSteps Include="$(_AdditionalTaskAssembly)" Type="Xamarin.GenerateReferencesStep" />
